@@ -1,54 +1,118 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+/* General Reset */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.card {
-    width: 300px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.business-card {
+    background: #fff;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    text-align: center;
+    color: #2d3436;
     transition: transform 0.3s ease;
 }
 
-.card:hover {
+.business-card:hover {
     transform: translateY(-10px);
 }
 
 .card-header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
+    background: #6c5ce7;
+    color: #fff;
     padding: 20px;
-    font-size: 1.5em;
+}
+
+.card-header h1 {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.card-header .job-title {
+    font-size: 16px;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.profile-picture img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #fff;
 }
 
 .card-body {
     padding: 20px;
+    font-size: 14px;
+    background: #f5f6fa;
 }
 
 .card-body p {
     margin: 10px 0;
-    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 500;
 }
 
-.card-body .btn {
-    display: inline-block;
-    padding: 10px 15px;
+.skillset, .rate {
+    padding: 20px;
+    background: #f1f2f6;
+    text-align: center; /* Center text alignment */
+}
+
+.skillset h2, .rate h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #6c5ce7;
+}
+
+.skillset ul {
+    list-style: none;
+    padding-left: 0; /* Remove padding for centered layout */
+}
+
+.skillset ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.rate p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2d3436;
     margin-top: 10px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
-.card-body .btn:hover {
-    background-color: #45a049;
+.card-footer {
+    background: #dfe6e9;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #b2bec3;
+}
+
+.card-footer .social-link {
+    text-decoration: none;
+    color: #6c5ce7;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.card-footer .social-link:hover {
+    color: #0984e3;
 }

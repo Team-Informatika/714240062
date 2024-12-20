@@ -3,19 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kartu Nama</title>
+    <title>Kartu Nama Digital</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="card" id="businessCard">
-        <div class="card-header">Muhammad Malik Nur</div>
+    <div class="business-card">
+        <div class="card-header">
+            <div class="profile-picture">
+                <img src="your-photo.jpg" alt="Your Photo">
+            </div>
+            <h1>Nama Anda</h1>
+            <p class="job-title">Pekerjaan/Keahlian Anda</p>
+        </div>
         <div class="card-body">
-            <p><strong>Profesi:</strong> Web Developer</p>
-            <p><strong>Email:</strong> Kamalputra1177@gmail.com</p>
-            <p><strong>Telepon:</strong> +62 821-2233-9125</p>
-            <a href="#" class="btn" onclick="showMessage()">Hubungi</a>
+            <p><span>📞</span> 0812-3456-7890</p>
+            <p><span>✉️</span> email@example.com</p>
+            <p><span>🌐</span> www.example.com</p>
+            <p><span>📍</span> Kota Anda</p>
+        </div>
+        <div class="skillset">
+            <h2>My Skillset</h2>
+            <ul>
+                <li>💻 Frontend Development (HTML, CSS, JavaScript)</li>
+                <li>🔧 Backend Development (Node.js, PHP, Python)</li>
+                <li>🎨 UI/UX Design</li>
+                <li>⚙️ DevOps & Deployment</li>
+            </ul>
+        </div>
+        <div class="rate">
+            <h2>Hourly Rate</h2>
+            <p>💵 $50 per hour</p>
+        </div>
+        <div class="card-footer">
+            <a href="https://linkedin.com" target="_blank" class="social-link">LinkedIn</a>
+            <a href="https://github.com" target="_blank" class="social-link">GitHub</a>
+            <a href="https://instagram.com" target="_blank" class="social-link">Instagram</a>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
