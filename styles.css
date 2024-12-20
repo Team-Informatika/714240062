@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('https://video-previews.elements.envatousercontent.com/79e61366-3aeb-4e9a-97d3-d3080bd37072/watermarked_preview/watermarked_preview.mp4') no-repeat center center fixed;
+    background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2Fthomas10-10%2Ffoo-Wallpaper-Feh-Gif&psig=AOvVaw1OSKSNAiTmuE33Ht4CKfsf&ust=1734774886104000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCKi62ZqKtooDFQAAAAAdAAAAABAE') no-repeat center center fixed;
     background-size: cover;
     overflow: hidden;
 }
@@ -84,7 +84,7 @@ body {
 .skillset h2, .rate h2 {
     margin-bottom: 10px;
     font-size: 18px;
-    color: #6c5ce7;
+    color: #eb0909;
 }
 
 .skillset ul {
@@ -116,13 +116,13 @@ body {
 
 .card-footer .social-link {
     text-decoration: none;
-    color: #6c5ce7;
+    color: #860b0b;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .card-footer .social-link:hover {
-    color: #0984e3;
+    color: #860b0b;
 }
 
 /* Tambahan Overlay jika GIF terlalu mencolok */
@@ -135,4 +135,22 @@ body::before {
     height: 100%;
     background: rgba(0, 0, 0, 0.3); /* Warna overlay */
     z-index: -1; /* Tetap di bawah konten utama */
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start; /* Mulai dari atas pada layar kecil */
+        padding: 20px;
+    }
+
+    .business-card {
+        width: 100%; /* Gunakan seluruh lebar layar */
+        margin: 10px 0;
+    }
+
+    .card-footer {
+        flex-direction: column; /* Susun secara vertikal pada layar kecil */
+        gap: 5px;
+    }
 }
