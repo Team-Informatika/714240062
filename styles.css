@@ -7,21 +7,42 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    height: 100vh;
+    overflow: hidden; /* Mencegah scroll */
+    position: relative; /* Untuk memastikan elemen relatif */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
+/* Video Background */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Video berada di belakang elemen lain */
+    overflow: hidden;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Menutup seluruh area latar belakang */
+}
+
+/* Business Card */
 .business-card {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9); /* Warna putih transparan */
     width: 400px;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     text-align: center;
     color: #2d3436;
+    z-index: 1; /* Pastikan berada di atas video */
+    backdrop-filter: blur(10px); /* Efek blur pada latar belakang */
     transition: transform 0.3s ease;
 }
 
@@ -71,7 +92,7 @@ body {
 .skillset, .rate {
     padding: 20px;
     background: #f1f2f6;
-    text-align: center; /* Center text alignment */
+    text-align: center;
 }
 
 .skillset h2, .rate h2 {
@@ -82,7 +103,7 @@ body {
 
 .skillset ul {
     list-style: none;
-    padding-left: 0; /* Remove padding for centered layout */
+    padding-left: 0;
 }
 
 .skillset ul li {
