@@ -154,3 +154,20 @@ body::before {
         gap: 5px;
     }
 }
+@media (max-width : 480px){
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding : 5px;
+    }
+
+    .business-card {
+        width: 100%;
+        margin : 10px 0;
+    }
+
+    .card-footer {
+        flex-direction: column;
+        gap: 10px ;
+    }
+}
